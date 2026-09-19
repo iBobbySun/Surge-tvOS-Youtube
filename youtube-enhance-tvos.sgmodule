@@ -2,7 +2,6 @@
 #!desc=YouTube Enhance adapted for Surge tvOS/JSC. Removes YouTube ads and keeps upstream filtering logic. Uses a JSC TextEncoder/TextDecoder compatibility loader.
 #!arguments=block_upload:true,block_shorts:false,auto_hd:true,block_games:true,block_vertical_live:false
 #!arguments-desc=block_upload: hide Uploads; block_shorts: hide Shorts; auto_hd: force highest available quality; block_games: hide YouTube Playables; block_vertical_live: hide vertical-live recommendations.
-#!requirement=SYSTEM = 'tvOS'
 
 [Script]
 youtube.enhance.ad-break = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player\/ad_break(?:\?.*)?$,script-path=https://raw.githubusercontent.com/gholts/surge/main/scripts/youtube/request.js,engine=jsc
